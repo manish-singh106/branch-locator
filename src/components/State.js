@@ -13,7 +13,7 @@ export default function State({state, showCity, setShowCity}) {
       <p className='text-teal-700 font-bold text-lg'>{state}</p>
       <div className='flex justify-between' onClick={()=>handleClick()}>
         <span>{city}</span> 
-        <span><img className='h-4' src = "https://www.svgrepo.com/show/409025/angle-down.svg"/></span>
+        <span><img className='h-4' alt = "acc" src = "https://www.svgrepo.com/show/409025/angle-down.svg"/></span>
       </div>
       {showCity && < CityContainer state = {state} city = {city}/>}
     </div>
